@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "mytravel-web": "apps/mytravel-web",
+    "mytravel-web-e2e": "apps/mytravel-web-e2e"
+  }
+}
