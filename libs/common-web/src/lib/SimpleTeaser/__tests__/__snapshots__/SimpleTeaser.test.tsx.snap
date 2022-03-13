@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SimpleTeaser should render 1`] = `
+<div
+  className="simpleTeaser"
+>
+  <div
+    className="simpleTeaser_image"
+  >
+    <img
+      alt="mock image"
+      src="image.jpg"
+    />
+    <div
+      className="simpleTeaser_image_details"
+    >
+      <a
+        className="simpleTeaser_image_details_link"
+        href="#"
+      >
+        Details
+      </a>
+    </div>
+  </div>
+  <div
+    className="simpleTeaser_info"
+  >
+    some mock teaser info
+  </div>
+  <div
+    className="simpleTeaser_title"
+  >
+    mock title
+  </div>
+  <div
+    className="simpleTeaser_rating"
+  >
+    <span>
+      <img
+        alt="star"
+        src="/assets/icons/star_full.svg"
+      />
+      <img
+        alt="star"
+        src="/assets/icons/star_full.svg"
+      />
+      <img
+        alt="star"
+        src="/assets/icons/star_full.svg"
+      />
+      <img
+        alt="star"
+        src="/assets/icons/star_half_full.svg"
+      />
+      <img
+        alt="star"
+        src="/assets/icons/star_empty.svg"
+      />
+    </span>
+    <span
+      className="simpleTeaser_rating_value"
+    >
+      3.4
+    </span>
+  </div>
+  <div
+    className="simpleTeaser_price"
+  >
+    <span
+      className="simpleTeaser_price__standard"
+    >
+      From 
+      $
+      111
+    </span>
+    <span
+      className="simpleTeaser_price__separator"
+    />
+    <span
+      className="simpleTeaser_price__promo"
+    >
+      Price 
+      $
+      222
+    </span>
+  </div>
+</div>
+`;
