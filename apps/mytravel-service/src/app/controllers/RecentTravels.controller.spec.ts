@@ -1,7 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
 
 import { RecentTravelsController } from './RecentTravels.controller';
-import { AppService } from './app.service';
+import { RecentTravelsService } from "../services/RecentTravels.service";
+
+
+jest.mock("../services/RecentTravels.service")
 
 describe('AppController', () => {
   let app: TestingModule;
@@ -9,16 +12,16 @@ describe('AppController', () => {
   beforeAll(async () => {
     app = await Test.createTestingModule({
       controllers: [RecentTravelsController],
-      providers: [AppService],
+      providers: [RecentTravelsService],
     }).compile();
   });
 
   describe('getData', () => {
-    it('should return "Welcome to mytravel-service!"', () => {
+    it("should call controller getData", () => {
       const appController = app.get<RecentTravelsController>(RecentTravelsController);
-      expect(appController.getData()).toEqual({
-        message: 'Welcome to mytravel-service!',
-      });
+      const service = app.get<RecentTravelsService>(RecentTravelsService);
+      appController.getData();
+      expect(service.getRecentTravels).toBeCalledTimes(1);
     });
   });
 });

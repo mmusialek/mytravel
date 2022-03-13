@@ -46,6 +46,70 @@
         "currency": "EUR",
         "symbol": "€"
       }
+    },
+    {
+      "image": {
+        "imagePath": "/assets/img/EU_Croatia_English_2020_Output.jpg",
+        "alt": "Sailing and islands"
+      },
+      "stayCount": 13,
+      "destinationCount": 1,
+      "title": "Sailing along the islands",
+      "rating": 4.3,
+      "price": {
+        "price": 2.465,
+        "promoPrice": 2.245,
+        "currency": "EUR",
+        "symbol": "€"
+      }
+    },
+    {
+      "image": {
+        "imagePath": "/assets/img/WhereToGoInCroatia_header_3.jpg",
+        "alt": "Croatia"
+      },
+      "stayCount": 9,
+      "destinationCount": 1,
+      "title": "Old city and see",
+      "rating": 3.9,
+      "price": {
+        "price": 1.463,
+        "promoPrice": 1.145,
+        "currency": "EUR",
+        "symbol": "€"
+      }
+    },
+    {
+      "image": {
+        "imagePath": "/assets/img/Grand-Train-Switzerland-17.jpg",
+        "alt": "Switzerland mountains"
+      },
+      "stayCount": 13,
+      "destinationCount": 5,
+      "title": "To the mountains",
+      "rating": 4.9,
+      "price": {
+        "price": 3.463,
+        "promoPrice": 3.045,
+        "currency": "EUR",
+        "symbol": "€"
+      }
+    },
+    {
+      "image": {
+        "imagePath": "/assets/img/Nendaz-Cor-des-Alpes.jpg",
+        "alt": "Alpes"
+      },
+      "stayCount": 12,
+      "destinationCount": 4,
+      "title": "Tour de Alpes",
+      "rating": 4.9,
+      "price": {
+        "price": 3.463,
+        "promoPrice": 3.045,
+        "currency": "EUR",
+        "symbol": "€"
+      }
     }
   ]
 }

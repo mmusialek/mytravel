@@ -1,10 +1,7 @@
 .recentTrips {
   display: flex;
   flex-direction: column;
-
-  &_title {
-    text-align: center;
-  }
+  align-items: center;
 
   &_items {
     display: flex;

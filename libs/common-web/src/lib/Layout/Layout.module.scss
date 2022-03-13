@@ -18,6 +18,9 @@
     padding: 50px;
     display: flex;
     justify-content: center;
+    flex-grow: 1;
+    height: calc(100vh - 300px);
+    overflow: auto;
   }
 
   &_footer {
