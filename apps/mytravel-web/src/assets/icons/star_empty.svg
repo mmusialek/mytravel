@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="svg266"
+   sodipodi:docname="star_empty.svg"
+   width="36.743149"
+   height="35.448689"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview268"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="3.5266667"
+     inkscape:cx="70.746692"
+     inkscape:cy="76.8431"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg266" />
+  <defs
+     id="defs262">
+    <linearGradient
+       id="half_grad"
+       gradientTransform="matrix(1.0180945,0,0,0.98222711,2.3784871,1.9393479)"
+       x1="-2.3362145"
+       y1="-1.9744394"
+       x2="33.753901"
+       y2="-1.9744394"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#FFF"
+         id="stop259" />
+    </linearGradient>
+  </defs>
+  <path
+     d="m 22.766487,12.857348 11.612,1.2 -8.735,7.749 2.649,11.533 -9.893,-6.088 -9.8939999,6.088 2.6949999,-11.533 -8.8219999,-7.749 11.5469999,-1.2 4.479,-10.3180001 z"
+     fill="url(#half_grad)"
+     stroke-width="2"
+     stroke="#ffeb0b"
+     id="path264"
+     style="fill:url(#half_grad)" />
+</svg>

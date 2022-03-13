@@ -1,0 +1,30 @@
+@import "../styles/variables.scss";
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  background-color: $col-bodyBg;
+  min-height: 100vh;
+
+  &_header {
+    height: 100px;
+    background-color: $col-headerBg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_body {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &_footer {
+    height: 200px;
+    background-color: $col-footerBg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

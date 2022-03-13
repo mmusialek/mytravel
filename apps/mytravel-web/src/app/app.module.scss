@@ -1,1 +1,10 @@
-/* Your styles goes here. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "../../../../libs/common-web/src/lib/styles/variables.scss";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .05em;
+  color: $col-mainFont;
+  margin: 0;
+  padding: 0;
+}

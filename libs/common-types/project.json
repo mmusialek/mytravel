@@ -1,0 +1,32 @@
+{
+  "root": "libs/common-types",
+  "sourceRoot": "libs/common-types/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/common-types",
+        "main": "libs/common-types/src/index.ts",
+        "tsConfig": "libs/common-types/tsconfig.lib.json",
+        "assets": ["libs/common-types/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/common-types/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/common-types"],
+      "options": {
+        "jestConfig": "libs/common-types/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

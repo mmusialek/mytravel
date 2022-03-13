@@ -1,13 +1,11 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
+import { Layout } from '@mytravel/common-web';
+import './app.module.scss';
+import { RecentTrips } from './modules/RecentTrips/RencentTrips';
 
 export function App() {
   return (
-    <>
-      <NxWelcome title="mytravel-web" />
-      <div />
-    </>
+    <Layout children={<RecentTrips />}></Layout>
   );
 }
 

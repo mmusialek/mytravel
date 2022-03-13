@@ -1,0 +1,52 @@
+{
+  "root": "apps/mytravel-service",
+  "sourceRoot": "apps/mytravel-service/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/mytravel-service",
+        "main": "apps/mytravel-service/src/main.ts",
+        "tsConfig": "apps/mytravel-service/tsconfig.app.json",
+        "assets": ["apps/mytravel-service/src/assets"]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "apps/mytravel-service/src/environments/environment.ts",
+              "with": "apps/mytravel-service/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/node:node",
+      "options": {
+        "buildTarget": "mytravel-service:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/mytravel-service/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/mytravel-service"],
+      "options": {
+        "jestConfig": "apps/mytravel-service/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

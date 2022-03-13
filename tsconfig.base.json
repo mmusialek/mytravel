@@ -8,13 +8,18 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "ES2019",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["es2019", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@mytravel/common-types": ["libs/common-types/src/index.ts"],
+      "@mytravel/common-web": ["libs/common-web/src/index.ts"],
+      "@mytravel/communication": ["libs/communication/src/index.ts"],
+      "@mytravel/util-formatters": ["libs/util-formatters/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,6 +1,10 @@
 {
   "version": 2,
   "projects": {
+    "common-types": "libs/common-types",
+    "common-web": "libs/common-web",
+    "communication": "libs/communication",
+    "mytravel-service": "apps/mytravel-service",
     "mytravel-web": "apps/mytravel-web",
     "mytravel-web-e2e": "apps/mytravel-web-e2e"
   }

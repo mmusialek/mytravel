@@ -18,5 +18,5 @@
     "**/*.spec.jsx",
     "**/*.test.jsx"
   ],
-  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
+  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "../../libs/common-web/src/lib/SimpleTeaser/SimpleTeaser.tsx", "../../libs/common-types/src/lib/RecentTrips.tsx"]
 }
