@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
+  width: 100%;
 
   &_items {
     display: flex;
@@ -10,9 +12,21 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 1600px;
+    padding-bottom: 50px;
 
     &>div {
       padding-top: 50px;
+    }
+  }
+
+}
+
+// media section
+
+@media only screen and (max-width: 600px) {
+  .recentTrips {
+    &_items {
+      max-width: 600px;
     }
   }
 

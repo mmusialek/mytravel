@@ -1,1 +1,1 @@
-export * from './lib/RecentTrips';
+export * from "./lib/RecentTrips";

@@ -4,6 +4,13 @@ export class IRecentTrip {
   image: IImageData;
 
   @ApiProperty({
+    description: "Trip identificator.",
+    example: "111-qwe",
+    type: "string",
+  })
+  id: string;
+
+  @ApiProperty({
     description: "Trip title.",
     example: "Italian Espresso",
     type: "string",

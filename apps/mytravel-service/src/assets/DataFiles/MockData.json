@@ -1,5 +1,6 @@
 {
   "recentTravels": [{
+      "id": "111",
       "image": {
         "imagePath": "/assets/img/beach-holiday-italian-riviera-best-of-we-d-love-to-visit-a-quiet-italian-town-by-the-sea-in-september-of-beach-holiday-italian-riviera.jpg",
         "alt": "Italian riviea"
@@ -16,6 +17,7 @@
       }
     },
     {
+      "id": "222",
       "image": {
         "imagePath": "/assets/img/Gondola-trip.jpg",
         "alt": "Simply Italy - gondola"
@@ -32,6 +34,7 @@
       }
     },
     {
+      "id": "333",
       "image": {
         "imagePath": "/assets/img/ExpatExplore_Water.jpg",
         "alt": "Italian Espresso - coffee"
@@ -48,6 +51,7 @@
       }
     },
     {
+      "id": "444",
       "image": {
         "imagePath": "/assets/img/EU_Croatia_English_2020_Output.jpg",
         "alt": "Sailing and islands"
@@ -64,6 +68,7 @@
       }
     },
     {
+      "id": "555",
       "image": {
         "imagePath": "/assets/img/WhereToGoInCroatia_header_3.jpg",
         "alt": "Croatia"
@@ -80,6 +85,7 @@
       }
     },
     {
+      "id": "666",
       "image": {
         "imagePath": "/assets/img/Grand-Train-Switzerland-17.jpg",
         "alt": "Switzerland mountains"
@@ -96,6 +102,7 @@
       }
     },
     {
+      "id": "777",
       "image": {
         "imagePath": "/assets/img/Nendaz-Cor-des-Alpes.jpg",
         "alt": "Alpes"

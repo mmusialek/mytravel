@@ -1,8 +1,8 @@
 import { IImageData } from "@mytravel/common-types";
 import styles from "./SimpleTeaser.module.scss";
 
-
 export interface ISimpleTeaserProps {
+  id: string;
   image: IImageData;
   teaserInfo: string;
   title: string;
@@ -13,8 +13,6 @@ export interface ISimpleTeaserProps {
 }
 
 export const SimpleTeaser = (props: ISimpleTeaserProps) => {
-
-
   const getStarRating = (rating: number) => {
     const res: React.ReactElement[] = [];
     const maxRating = 5;
@@ -35,31 +33,41 @@ export const SimpleTeaser = (props: ISimpleTeaserProps) => {
         ratingImage = "/assets/icons/star_empty.svg";
       }
 
-      res.push(<img src={ratingImage} alt="star" key={"star_rating_" + i} />)
+      res.push(<img src={ratingImage} alt="star" key={"star_rating_" + i} />);
       tmp -= 1;
     }
 
     return res;
-  }
+  };
 
-  return (<div className={styles.simpleTeaser}>
-    {/* <div className={styles.simpleTeaser_image}>{props.image}</div> */}
-    <div className={styles.simpleTeaser_image}>
-      <img src={props.image.imagePath} alt={props.image.alt} />
-      <div className={styles.simpleTeaser_image_details}>
-        <a className={styles.simpleTeaser_image_details_link} href="#">Details</a>
+  return (
+    <div className={styles.simpleTeaser}>
+      {/* <div className={styles.simpleTeaser_image}>{props.image}</div> */}
+      <div className={styles.simpleTeaser_image}>
+        <img src={props.image.imagePath} alt={props.image.alt} />
+        <div className={styles.simpleTeaser_image_details}>
+          <a className={styles.simpleTeaser_image_details_link} href="#">
+            Details
+          </a>
+        </div>
+      </div>
+      <div className={styles.simpleTeaser_info}>{props.teaserInfo}</div>
+      <div className={styles.simpleTeaser_title}>{props.title}</div>
+      <div className={styles.simpleTeaser_rating}>
+        <span>{getStarRating(props.rating)}</span>
+        <span className={styles.simpleTeaser_rating_value}>{props.rating}</span>
+      </div>
+      <div className={styles.simpleTeaser_price}>
+        <span className={styles.simpleTeaser_price__standard}>
+          From {props.currencySymbol}
+          {props.priceFromPromo}
+        </span>
+        <span className={styles.simpleTeaser_price__separator}></span>
+        <span className={styles.simpleTeaser_price__promo}>
+          Price {props.currencySymbol}
+          {props.priceFrom}
+        </span>
       </div>
     </div>
-    <div className={styles.simpleTeaser_info}>{props.teaserInfo}</div>
-    <div className={styles.simpleTeaser_title}>{props.title}</div>
-    <div className={styles.simpleTeaser_rating}>
-      <span>{getStarRating(props.rating)}</span>
-      <span className={styles.simpleTeaser_rating_value}>{props.rating}</span>
-    </div>
-    <div className={styles.simpleTeaser_price}>
-      <span className={styles.simpleTeaser_price__standard}>From {props.currencySymbol}{props.priceFromPromo}</span>
-      <span className={styles.simpleTeaser_price__separator}></span>
-      <span className={styles.simpleTeaser_price__promo}>Price {props.currencySymbol}{props.priceFrom}</span>
-    </div>
-  </div >)
-}
+  );
+};

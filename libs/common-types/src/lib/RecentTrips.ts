@@ -1,4 +1,5 @@
 export interface IRecentTrip {
+  id: string;
   image: IImageData;
   title: string;
   stayCount: number;
