@@ -1,10 +1,11 @@
 import { IRecentTrip } from "@mytravel/common-types";
+import { ServiceConst } from "./ServiceConst";
 
 export class RecentTripsRestService {
 
   async getRecentTrips(): Promise<IRecentTrip[]> {
     try {
-      const apiRes = await fetch("http://localhost:3333/api/RecentTravels");
+      const apiRes = await fetch(`${ServiceConst.BaseApiUrl}RecentTravels`);
 
       await new Promise((resolve) => setTimeout(resolve, 2000));
       if (apiRes.ok) {
